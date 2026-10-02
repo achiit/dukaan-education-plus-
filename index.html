@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Education Plus (+) | Coaching Centre in Rewa, Nursery to 12th</title>
+<meta name="description" content="Education Plus (+), a new coaching centre near Subash Chowk, Rewa. Classes from Nursery to 12th (Maths, Science, English, PCM and Biology). Free demo class for every new student.">
+<meta name="theme-color" content="#D7263D">
+<meta property="og:title" content="Education Plus (+) | Coaching Centre in Rewa">
+<meta property="og:description" content="Nursery to 12th coaching near Subash Chowk, Rewa. Book a free demo class today.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D7263D'/%3E%3Cpath d='M32 14v36M14 32h36' stroke='%23FBF6EE' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF6EE;
+  --paper-2:#F3EBDD;
+  --ink:#1F2328;
+  --ink-soft:#4A5058;
+  --red:#D7263D;
+  --red-dark:#B01A2E;
+  --cyan:#0E8FA3;
+  --cyan-soft:#D6EEF1;
+  --line:#E3D8C5;
+  --font-head:'Fraunces',Georgia,'Times New Roman',serif;
+  --font-body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1180px;
+  --space:clamp(64px,9vw,120px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-head);line-height:1.1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:var(--space) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+.eyebrow svg{width:34px;height:12px}
+h2{font-size:clamp(2rem,4.4vw,3.1rem);font-weight:700;max-width:18ch}
+.lead{color:var(--ink-soft);max-width:58ch;margin-top:14px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 24px;border-radius:999px;font-weight:800;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease;min-height:50px}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--red);color:#fff;border-color:var(--red)}
+.btn-wa:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.btn-call{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-call:hover{background:var(--ink);color:var(--paper)}
+.btn-sm{padding:9px 16px;min-height:42px;font-size:.92rem}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:2px solid var(--ink)}
+.bar{display:flex;align-items:center;gap:20px;min-height:74px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:var(--font-head);font-weight:800;font-size:1.3rem;white-space:nowrap}
+.logo .mark{width:38px;height:38px;border-radius:10px;background:var(--red);display:grid;place-items:center}
+.logo .mark svg{width:22px;height:22px}
+nav.main{margin-left:auto}
+nav.main ul{display:flex;gap:26px;list-style:none}
+nav.main a{text-decoration:none;font-weight:700;font-size:.95rem;padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover{border-color:var(--cyan)}
+.head-cta{display:flex;gap:10px}
+.burger{display:none;margin-left:auto;background:none;border:2px solid var(--ink);border-radius:10px;width:46px;height:46px;cursor:pointer;align-items:center;justify-content:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2.5px;background:var(--ink);position:relative;content:"";border-radius:2px}
+.burger span::before{position:absolute;top:-6px}
+.burger span::after{position:absolute;top:6px}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,80px) 0 var(--space);position:relative;background:
+  repeating-linear-gradient(to bottom,transparent 0,transparent 35px,rgba(14,143,163,.13) 35px,rgba(14,143,163,.13) 36px)}
+.hero::before{content:"";position:absolute;left:clamp(14px,5vw,64px);top:0;bottom:0;width:2px;background:rgba(215,38,61,.35)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.tag-new{display:inline-block;background:var(--cyan);color:#fff;font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:6px;transform:rotate(-2deg);margin-bottom:22px}
+h1{font-size:clamp(2.3rem,5.6vw,4.2rem);font-weight:800}
+h1 em{font-style:normal;color:var(--red);position:relative;white-space:nowrap}
+h1 em svg{position:absolute;left:0;bottom:-10px;width:100%;height:12px}
+.proof{margin-top:20px;font-weight:700;color:var(--ink-soft);display:flex;gap:10px;align-items:flex-start}
+.proof svg{flex:none;width:22px;height:22px;margin-top:3px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero-nums{margin-top:18px;font-size:.92rem;color:var(--ink-soft)}
+.hero-visual{position:relative}
+.hero-visual .photo{border-radius:28px 28px 120px 28px;overflow:hidden;border:3px solid var(--ink);box-shadow:12px 12px 0 var(--cyan);background:var(--paper-2);aspect-ratio:4/5}
+.hero-visual img{width:100%;height:100%;object-fit:cover}
+.sticker{position:absolute;left:-46px;bottom:34px;background:var(--red);color:#fff;border:3px solid var(--ink);border-radius:18px;padding:16px 20px;transform:rotate(-5deg);max-width:210px;z-index:2}
+.sticker b{display:block;font-family:var(--font-head);font-size:1.5rem;line-height:1}
+.sticker span{font-size:.88rem;font-weight:600}
+.big-plus{position:absolute;right:-70px;top:-60px;width:150px;height:150px;z-index:2}
+
+/* trust */
+.trust{background:var(--ink);color:var(--paper);padding:44px 0}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.trust li{border-left:3px solid var(--red);padding-left:18px}
+.trust strong{display:block;font-family:var(--font-head);font-size:2.4rem;line-height:1;color:#fff}
+.trust span{font-size:.92rem;color:#D9D3C7}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px;margin-top:48px}
+.card{background:#FFFDF8;border:2px solid var(--ink);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:12px;position:relative}
+.card.c-a{grid-column:span 3}
+.card.c-b{grid-column:span 3;margin-top:34px}
+.card.c-c{grid-column:span 2}
+.card.c-d{grid-column:span 2;margin-top:-22px}
+.card.c-e{grid-column:span 2}
+.card.demo{background:var(--cyan);color:#fff;border-color:var(--ink)}
+.card.demo p{color:#EAF9FB}
+.card .ico{width:52px;height:52px;border-radius:14px;background:var(--cyan-soft);display:grid;place-items:center}
+.card.demo .ico{background:#fff}
+.card .ico svg{width:30px;height:30px}
+.card h3{font-size:1.5rem;font-weight:700}
+.card p{color:var(--ink-soft);font-size:.98rem}
+.card .meta{font-weight:800;font-size:.85rem;color:var(--red);letter-spacing:.04em}
+.card.demo .meta{color:#fff}
+.card .btn{margin-top:auto;align-self:flex-start}
+.card.demo .btn-wa{background:var(--ink);border-color:var(--ink)}
+
+/* divider */
+.rule{display:block;width:100%;height:24px;color:var(--cyan)}
+
+/* about */
+.about{background:var(--paper-2)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.avatar-block{position:sticky;top:110px}
+.avatar{width:170px;height:170px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--font-head);font-weight:800;font-size:3.6rem;display:grid;place-items:center;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--cyan)}
+.avatar-block h3{margin-top:26px;font-size:1.4rem}
+.avatar-block p{color:var(--ink-soft);font-size:.95rem}
+.about-copy p{margin-top:16px;color:var(--ink-soft)}
+.about-copy p:first-of-type{margin-top:24px}
+.diffs{list-style:none;margin-top:30px;display:grid;gap:14px}
+.diffs li{display:flex;gap:14px;align-items:flex-start;font-weight:700}
+.diffs svg{flex:none;width:26px;height:26px;margin-top:1px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:16px;margin-top:44px}
+.gal figure{border-radius:16px;overflow:hidden;border:2px solid var(--ink);background:var(--paper-2);position:relative}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figure:nth-child(1){grid-column:span 3;grid-row:span 2}
+.gal figure:nth-child(2){grid-column:span 3;grid-row:span 1}
+.gal figure:nth-child(3){grid-column:span 2;grid-row:span 2}
+.gal figure:nth-child(4){grid-column:span 1;grid-row:span 2}
+.gal figure:nth-child(5){grid-column:span 3;grid-row:span 1}
+.gal figure:nth-child(6){grid-column:span 2;grid-row:span 1}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:var(--paper);border:2px solid var(--ink);border-radius:8px;font-size:.78rem;font-weight:800;padding:3px 9px}
+
+/* testimonials */
+.testi-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:22px;margin-top:44px;align-items:start}
+blockquote{background:#FFFDF8;border:2px solid var(--ink);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:14px}
+blockquote:nth-child(2){margin-top:30px;background:var(--cyan-soft)}
+blockquote:nth-child(3){margin-top:-12px}
+.stars{display:flex;gap:3px}
+.stars svg{width:20px;height:20px}
+blockquote p{font-size:1.02rem}
+blockquote footer{font-size:.9rem;color:var(--ink-soft)}
+blockquote footer b{color:var(--ink);display:block}
+
+/* pricing */
+.pricing{background:var(--ink);color:var(--paper)}
+.pricing .eyebrow{color:#FF8A99}
+.pricing .lead{color:#D9D3C7}
+.plist{list-style:none;margin-top:40px;max-width:860px;border-top:2px solid #4A5058}
+.plist li{display:grid;grid-template-columns:1fr auto;gap:8px 24px;padding:22px 0;border-bottom:2px dashed #4A5058;align-items:center}
+.plist h3{font-size:1.35rem;color:#fff}
+.plist small{display:block;color:#C6C0B4;font-size:.9rem;margin-top:2px;font-family:var(--font-body)}
+.plist .fee{font-weight:800;color:#7FD6E2;text-align:right}
+.plist .free{color:#fff;background:var(--red);padding:6px 14px;border-radius:999px;font-size:.9rem}
+.pricing .note{margin-top:26px;color:#D9D3C7;max-width:60ch}
+.pricing .btn-call{color:#fff;border-color:#fff}
+.pricing .btn-call:hover{background:#fff;color:var(--ink)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:44px;align-items:start}
+.map{border:3px solid var(--ink);border-radius:24px;overflow:hidden;box-shadow:10px 10px 0 var(--red);background:var(--paper-2)}
+.map iframe{width:100%;height:420px;border:0;display:block}
+.info h3{font-size:1.3rem;margin-bottom:10px}
+.hours{width:100%;border-collapse:collapse;margin-bottom:28px}
+.hours td{padding:11px 0;border-bottom:1px dashed var(--line);vertical-align:top}
+.hours td:last-child{text-align:right;font-weight:700}
+.methods{display:grid;gap:12px}
+.methods a.line{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;font-weight:800;background:#FFFDF8}
+.methods a.line:hover{background:var(--cyan-soft)}
+.methods small{display:block;font-weight:600;color:var(--ink-soft)}
+.addr{margin-bottom:24px;color:var(--ink-soft)}
+.addr strong{color:var(--ink)}
+
+/* footer */
+footer.site{background:var(--red);color:#fff;padding:70px 0 40px}
+.foot-top{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.foot-top h2{color:#fff;max-width:16ch}
+.foot-top .btn-big{background:#fff;color:var(--red-dark);border-color:#fff;font-size:1.2rem;padding:18px 30px;margin-top:22px}
+.foot-links{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px;padding-top:34px;border-top:2px solid rgba(255,255,255,.4)}
+.foot-links ul{list-style:none;display:grid;gap:8px}
+.foot-links a{text-decoration:none;font-weight:600}
+.foot-links a:hover{text-decoration:underline}
+.foot-links h4{font-family:var(--font-head);font-size:1.2rem;margin-bottom:10px}
+.foot-links p{max-width:38ch;font-size:.95rem}
+.copy{margin-top:34px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.88rem}
+.built{font-size:.88rem;text-transform:lowercase}
+
+/* sticky mobile bar */
+.mbar{display:none}
+
+/* responsive */
+@media (max-width:1080px){
+  nav.main ul{gap:18px}
+  .head-cta .btn span{display:none}
+  .head-cta .btn{padding:10px 14px}
+  .hero-grid{gap:36px}
+  .sticker{left:-20px}
+  .big-plus{right:-30px}
+  .trust strong{font-size:2rem}
+}
+@media (max-width:820px){
+  body{font-size:16px;padding-bottom:70px}
+  .burger{display:flex}
+  .head-cta{display:none}
+  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:2px solid var(--ink);display:none;margin:0}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;gap:0;padding:8px 22px 16px}
+  nav.main a{display:block;padding:14px 0;border-bottom:1px dashed var(--line);font-size:1.05rem}
+  .hero-grid,.about-grid,.contact-grid,.foot-top{grid-template-columns:1fr}
+  .hero-visual{max-width:440px;margin:10px auto 0;width:100%}
+  .sticker{left:-8px}
+  .big-plus{right:-10px;top:-44px;width:110px;height:110px}
+  .trust ul{grid-template-columns:1fr 1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .card.c-a,.card.c-b,.card.c-c,.card.c-d,.card.c-e{grid-column:span 1;margin-top:0}
+  .card.demo{grid-column:span 2}
+  .avatar-block{position:static}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .gal figure:nth-child(n){grid-column:span 1;grid-row:span 1}
+  .gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .testi-grid{grid-template-columns:1fr}
+  blockquote:nth-child(n){margin-top:0}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--paper);border-top:2px solid var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .mbar .btn{width:100%}
+}
+@media (max-width:520px){
+  .wrap{padding:0 18px}
+  .logo{font-size:1.1rem}
+  .hero::before{display:none}
+  .hero-cta .btn{width:100%}
+  .svc-grid{grid-template-columns:1fr}
+  .card.demo{grid-column:span 1}
+  .trust ul{gap:20px 14px}
+  .trust strong{font-size:1.8rem}
+  .plist li{grid-template-columns:1fr}
+  .plist .fee{text-align:left}
+  .gal{grid-auto-rows:120px}
+  .map iframe{height:320px}
+  .foot-links{grid-template-columns:1fr}
+  .sticker{max-width:170px;padding:12px 14px}
+  .sticker b{font-size:1.2rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.92 9.92 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.1.82.83-3.02-.2-.31a8.2 8.2 0 1 1 6.95 3.83Zm4.5-6.15c-.25-.12-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.17-.29.18-.54.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.3-.22.25-.86.84-.86 2.05s.88 2.38 1 2.55c.12.16 1.73 2.64 4.2 3.7 1.56.67 2.17.73 2.95.62.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+    <symbol id="i-call" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1l-2.2 2.2Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="#D7263D" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8L12 2.5Z"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M3 21l1.5-5L16.5 4a2 2 0 0 1 3 0l.5.5a2 2 0 0 1 0 3L8 19.5 3 21Z" fill="#FFD9DE" stroke="#1F2328" stroke-width="1.6" stroke-linejoin="round"/><path d="M14.5 6l3.5 3.5M4.5 16l3.5 3.5" stroke="#1F2328" stroke-width="1.6"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 120 12"><path d="M2 6c8-8 14 8 22 0s14 8 22 0 14 8 22 0 14 8 22 0 14 8 22 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site">
+  <div class="wrap bar">
+    <a href="#top" class="logo" aria-label="Education Plus home">
+      <span class="mark"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" stroke="#FBF6EE" stroke-width="5" stroke-linecap="round"/></svg></span>
+      Education Plus
+    </a>
+    <nav class="main" id="menu" aria-label="Main">
+      <ul>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#fees">Fees</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="head-cta">
+      <a class="btn btn-call btn-sm" href="tel:+919685925015"><svg><use href="#i-call"/></svg><span>Call</span></a>
+      <a class="btn btn-wa btn-sm" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20know%20about%20admissions." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" style="padding-bottom:var(--space)">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag-new">New centre in Rewa</span>
+      <h1>Nursery to 12th, taught with care near Subash Chowk, Rewa. Book your <em>free demo class<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 8c30-8 60 4 96-2s70-4 100-2" fill="none" stroke="#0E8FA3" stroke-width="4" stroke-linecap="round"/></svg></em> today.</h1>
+      <p class="proof">
+        <svg viewBox="0 0 24 24"><use href="#i-pencil"/></svg>
+        <span>Morning and evening batches, six days a week. Every new student starts with a free demo class.</span>
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20book%20a%20free%20demo%20class." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Book Free Demo on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+919685925015"><svg><use href="#i-call"/></svg>Call 96859 25015</a>
+      </div>
+      <p class="hero-nums">Also reach us at <a href="tel:+918839065010">88390 65010</a> or <a href="tel:+917354123611">73541 23611</a></p>
+    </div>
+    <div class="hero-visual">
+      <svg class="big-plus" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8v84M8 50h84" stroke="#D7263D" stroke-width="22" stroke-linecap="round"/></svg>
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&auto=format&fit=crop" alt="Students studying together in a classroom" width="800" height="1000" fetchpriority="high">
+      </div>
+      <div class="sticker"><b>Free Demo</b><span>for every new admission</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust" aria-label="At a glance">
+  <div class="wrap">
+    <ul>
+      <li><strong>Nursery–12th</strong><span>One centre for every class</span></li>
+      <li><strong>2 batches</strong><span>Morning and evening, daily</span></li>
+      <li><strong>6 days</strong><span>Mon to Sat, 7 AM to 7 PM</span></li>
+      <li><strong>₹0 demo</strong><span>Free demo class before you join</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="classes">
+  <div class="wrap">
+    <span class="eyebrow"><svg viewBox="0 0 120 12"><use href="#i-wave"/></svg>Classes we teach</span>
+    <h2>The right class for every stage of school.</h2>
+    <p class="lead">From first alphabets to board exam revision, one friendly centre near Subash Chowk. Tap WhatsApp on any class to ask about batch timing.</p>
+
+    <div class="svc-grid">
+      <article class="card c-a">
+        <div class="ico"><svg viewBox="0 0 32 32"><path d="M4 7h10a3 3 0 0 1 3 3v16a3 3 0 0 0-3-3H4V7Zm24 0H18a3 3 0 0 0-3 3v16a3 3 0 0 1 3-3h10V7Z" fill="none" stroke="#0E8FA3" stroke-width="2.4" stroke-linejoin="round"/></svg></div>
+        <span class="meta">NURSERY TO 5TH</span>
+        <h3>Primary Classes</h3>
+        <p>All subjects with a gentle, play-friendly start. We build reading, writing and number sense so children walk into 6th with confidence.</p>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20know%20about%20Primary%20classes%20(Nursery%20to%205th)." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask about Primary</a>
+      </article>
+
+      <article class="card c-b">
+        <div class="ico"><svg viewBox="0 0 32 32"><path d="M6 24 16 6l10 18H6Z" fill="none" stroke="#0E8FA3" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 20h10" stroke="#0E8FA3" stroke-width="2.4"/></svg></div>
+        <span class="meta">6TH TO 10TH</span>
+        <h3>Middle Classes</h3>
+        <p>Maths, Science and English taught step by step, with regular practice so 10th board pressure never comes as a surprise.</p>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20know%20about%20classes%206th%20to%2010th%20(Maths%2C%20Science%2C%20English)." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask about 6th–10th</a>
+      </article>
+
+      <article class="card c-c">
+        <div class="ico"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="3" fill="#0E8FA3"/><ellipse cx="16" cy="16" rx="12" ry="5" fill="none" stroke="#0E8FA3" stroke-width="2.2"/><ellipse cx="16" cy="16" rx="12" ry="5" transform="rotate(60 16 16)" fill="none" stroke="#0E8FA3" stroke-width="2.2"/><ellipse cx="16" cy="16" rx="12" ry="5" transform="rotate(120 16 16)" fill="none" stroke="#0E8FA3" stroke-width="2.2"/></svg></div>
+        <span class="meta">11TH &amp; 12TH</span>
+        <h3>Physics, Chemistry, Maths</h3>
+        <p>Concept-first PCM teaching for board preparation, with problem practice in every class.</p>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20know%20about%2011th%2F12th%20PCM%20coaching." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask about PCM</a>
+      </article>
+
+      <article class="card c-d">
+        <div class="ico"><svg viewBox="0 0 32 32"><path d="M16 28V12M16 12c0-5 4-8 9-8 0 5-3 9-9 8Zm0 6c0-4-3-7-8-7 0 4 3 8 8 7Z" fill="none" stroke="#0E8FA3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span class="meta">11TH &amp; 12TH</span>
+        <h3>Biology</h3>
+        <p>Clear diagrams, easy notes and regular revision for 11th and 12th Biology students.</p>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20know%20about%2011th%2F12th%20Biology%20coaching." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask about Biology</a>
+      </article>
+
+      <article class="card c-e demo">
+        <div class="ico"><svg viewBox="0 0 32 32"><path d="M16 4v24M4 16h24" stroke="#D7263D" stroke-width="6" stroke-linecap="round"/></svg></div>
+        <span class="meta">NEW ADMISSIONS</span>
+        <h3>Free Demo Class</h3>
+        <p>Sit in a real class, meet the teachers, and then decide. No fee, no pressure.</p>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20book%20a%20free%20demo%20class%20for%20my%20child." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Book my demo</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<svg class="rule" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12h1200" stroke="#0E8FA3" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/></svg>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="avatar-block">
+      <div class="avatar" role="img" aria-label="Education Plus initials">E+</div>
+      <h3>From the Education Plus team</h3>
+      <p>Near Subash Chowk, Rewa</p>
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow"><svg viewBox="0 0 120 12"><use href="#i-wave"/></svg>Our story</span>
+      <h2>A neighbourhood centre, built the way we wished tuition was.</h2>
+      <p>My younger cousin used to come home from school every day with the same doubts and nobody patient enough to sit with him. I watched him lose confidence in maths long before he lost interest in it. That stayed with me for years.</p>
+      <p>In 2026 we opened Education Plus in Rewa so that no child in our area has to sit in the back row and stay quiet. We are a new centre, and we are not going to pretend otherwise. What we promise is simple: teachers who explain until it makes sense, and parents who always know how their child is doing.</p>
+      <p>Come for a free demo class. If you like what you see, we would be happy to have you. If not, you have lost nothing.</p>
+      <ul class="diffs">
+        <li><svg viewBox="0 0 24 24"><use href="#i-pencil"/></svg>Free demo class for every new student</li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-pencil"/></svg>One centre from Nursery to 12th</li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-pencil"/></svg>Morning and evening batches to fit school timings</li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-pencil"/></svg>Three direct phone numbers, so you always get an answer</li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-pencil"/></svg>Easy to find, right near Subash Chowk</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <span class="eyebrow"><svg viewBox="0 0 120 12"><use href="#i-wave"/></svg>Inside the classroom</span>
+    <h2>Where learning gets done.</h2>
+    <div class="gal">
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&auto=format&fit=crop" alt="Teacher explaining a lesson to students" width="800" height="600"><figcaption>Group classes</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop" alt="Student writing notes at a desk" width="800" height="600"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop" alt="Classroom with a teacher at the board" width="800" height="600"><figcaption>Board work</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&auto=format&fit=crop" alt="Young children learning with books" width="800" height="600"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&auto=format&fit=crop" alt="Students raising hands in class" width="800" height="600"><figcaption>Doubt solving</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop" alt="Open books and notes on a study table" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<!-- NOTE FOR OWNER: These are sample parent comments written to show the layout. Replace them with real feedback from your first demo-class parents as soon as you have it. -->
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow"><svg viewBox="0 0 120 12"><use href="#i-wave"/></svg>Parent feedback</span>
+    <h2>What parents say after the demo class.</h2>
+    <div class="testi-grid">
+      <blockquote>
+        <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>My son is in 8th and was scared of maths. In the demo class the teacher made him come to the board and he actually enjoyed it. We joined the next day.</p>
+        <footer><b>Sample parent</b>Near Subash Chowk, Rewa</footer>
+      </blockquote>
+      <blockquote>
+        <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>Evening batch fits perfectly after school. Called the number, got a reply in two minutes, no running around.</p>
+        <footer><b>Sample parent</b>Rewa</footer>
+      </blockquote>
+      <blockquote>
+        <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>Free demo made the decision easy. My daughter in 11th Biology liked the diagrams and notes.</p>
+        <footer><b>Sample parent</b>Rewa</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="fees">
+  <div class="wrap">
+    <span class="eyebrow"><svg viewBox="0 0 120 12"><use href="#i-wave"/></svg>Fees</span>
+    <h2>Simple and upfront. No hidden charges.</h2>
+    <p class="lead">Fees depend on class and subjects. Ask us on call or WhatsApp and we will tell you the exact amount before you join.</p>
+    <ul class="plist">
+      <li><div><h3>Demo class (any class)</h3><small>Try a real class before deciding</small></div><span class="fee"><span class="free">FREE</span></span></li>
+      <li><div><h3>Nursery to 5th</h3><small>All subjects</small></div><span class="fee">Ask for current fee</span></li>
+      <li><div><h3>6th to 10th</h3><small>Maths, Science, English</small></div><span class="fee">Ask for current fee</span></li>
+      <li><div><h3>11th &amp; 12th PCM</h3><small>Physics, Chemistry, Maths</small></div><span class="fee">Ask for current fee</span></li>
+      <li><div><h3>11th &amp; 12th Biology</h3><small>Board preparation</small></div><span class="fee">Ask for current fee</span></li>
+    </ul>
+    <p class="note">Tell us your child's class and we will share the fee and batch timing on WhatsApp.</p>
+    <div class="hero-cta">
+      <a class="btn btn-wa" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20please%20share%20the%20fee%20details%20for%20my%20child%27s%20class." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Get fee details</a>
+      <a class="btn btn-call" href="tel:+919685925015"><svg><use href="#i-call"/></svg>Call us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow"><svg viewBox="0 0 120 12"><use href="#i-wave"/></svg>Visit us</span>
+    <h2>Come and see the centre.</h2>
+    <div class="contact-grid">
+      <div class="map">
+        <iframe title="Map showing Education Plus near Subash Chowk, Rewa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Near%20Subash%20Chowk%2C%20Rewa%2C%20Madhya%20Pradesh&amp;output=embed"></iframe>
+      </div>
+      <div class="info">
+        <p class="addr"><strong>Education Plus (+)</strong><br>Near Subash Chowk, Rewa (M.P.)</p>
+        <h3>Opening hours</h3>
+        <table class="hours">
+          <tr><td>Monday to Saturday</td><td>7:00 AM – 7:00 PM</td></tr>
+          <tr><td>Batches</td><td>Morning &amp; Evening</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <h3>Reach us</h3>
+        <div class="methods">
+          <a class="line" href="tel:+919685925015"><span>96859 25015<small>Call</small></span><svg width="22" height="22"><use href="#i-call"/></svg></a>
+          <a class="line" href="tel:+918839065010"><span>88390 65010<small>Call</small></span><svg width="22" height="22"><use href="#i-call"/></svg></a>
+          <a class="line" href="tel:+917354123611"><span>73541 23611<small>Call</small></span><svg width="22" height="22"><use href="#i-call"/></svg></a>
+          <a class="line" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20have%20a%20question%20about%20admissions." target="_blank" rel="noopener"><span>WhatsApp<small>96859 25015</small></span><svg width="22" height="22"><use href="#i-wa"/></svg></a>
+          <a class="line" href="https://instagram.com/education_plus_rewa" target="_blank" rel="noopener"><span>Instagram<small>@education_plus_rewa</small></span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2>Ready for your free demo class?</h2>
+        <a class="btn btn-big" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20book%20a%20free%20demo%20class." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Message us on WhatsApp</a>
+      </div>
+      <p>Education Plus (+)<br>New Coaching Centre in Rewa for Nursery to 12th Classes</p>
+    </div>
+    <div class="foot-links">
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#fees">Fees</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <p>Near Subash Chowk, Rewa (M.P.)<br>Mon–Sat, 7:00 AM – 7:00 PM</p>
+        <p style="margin-top:10px"><a href="https://instagram.com/education_plus_rewa" target="_blank" rel="noopener">Instagram: @education_plus_rewa</a></p>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr">2026</span> Education Plus (+). All rights reserved.</span>
+      <span class="built">built with ❤️ by 21.coders</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-call" href="tel:+919685925015"><svg><use href="#i-call"/></svg>Call</a>
+  <a class="btn btn-wa" href="https://wa.me/919685925015?text=Hello%20Education%20Plus%2C%20I%20want%20to%20know%20about%20admissions%20and%20the%20free%20demo%20class." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var b = document.getElementById('burger'), m = document.getElementById('menu');
+  b.addEventListener('click', function(){
+    var open = m.classList.toggle('open');
+    b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  m.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ m.classList.remove('open'); b.setAttribute('aria-expanded','false'); }
+  });
+})();
+</script>
+</body>
+</html>
